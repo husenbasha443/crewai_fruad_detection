@@ -1,0 +1,29 @@
+transaction_analysis_task:
+  description: >
+    Analyze the transaction data related to "{topic}".
+    Extract key attributes such as transaction amount, frequency,
+    transaction time, location, merchant category, and payment method.
+    Summarize any notable transaction characteristics.
+  expected_output: >
+    A structured summary of transaction characteristics for "{topic}".
+  agent: transaction_analyzer_agent
+
+pattern_detection_task:
+  description: >
+    Using the transaction analysis for "{topic}",
+    detect anomalous or suspicious patterns such as:
+    sudden spending spikes, unusual locations, abnormal timing,
+    or deviation from historical behavior.
+  expected_output: >
+    A list of detected anomalies for "{topic}" with clear reasoning.
+  agent: pattern_detector_agent
+
+fraud_explanation_task:
+  description: >
+    Provide a clear, human-readable explanation for the fraud decision
+    related to "{topic}".
+    Explain why the transaction was flagged or cleared,
+    using simple language suitable for customers and auditors.
+  expected_output: >
+    A non-technical, explainable fraud decision summary for "{topic}".
+  agent: explanation_agent
