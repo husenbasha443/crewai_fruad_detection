@@ -1,8 +1,3 @@
-Below is a **clean, professional, submission-ready `README.md`** for your
-🟢 **AI Fraud Detection & Explanation System**, designed **exactly like yesterday’s style** (trainer / evaluator friendly, enterprise tone).
-
-You can **directly copy-paste** this into `README.md`.
-
 ---
 
 ```md
